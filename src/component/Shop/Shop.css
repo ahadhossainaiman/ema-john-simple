@@ -21,4 +21,6 @@
 }
 .cart_content {
   margin: 40px 20px;
+  position: sticky;
+  top: 5%;
 }
