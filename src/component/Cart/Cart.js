@@ -1,11 +1,12 @@
 import React from 'react';
 import './Cart.css';
 
-export default function Cart({cart}) {
+export default function Cart(props) {
+  const {cart} = props
     let total = 0;
     let shipping = 0;
     let quantity = 0;
-    console.log(cart);
+    console.log(props);
     
     
 
@@ -24,6 +25,9 @@ export default function Cart({cart}) {
         <p><small>Total Shipping Charge:$ {shipping}</small></p>
         <p>Tax:$ {tax}</p>
         <h2>Grand Total:$ {total+shipping+tax}</h2>
+        {
+          props.children
+        }
     </div>
   )
 }

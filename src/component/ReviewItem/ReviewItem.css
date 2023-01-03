@@ -1,0 +1,35 @@
+.select-container {
+  border: 1px solid gray;
+  display: flex;
+  margin: 2rem;
+  width: 70%;
+  border-radius: 2px;
+}
+
+.select-container img {
+  width: 91px;
+  height: 91px;
+  margin: 0.5rem;
+}
+.select-item {
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.cart-content {
+}
+.delete-button {
+  color: rgb(236, 75, 75);
+  width: 27px;
+  height: 35px;
+  font-size: 37px;
+}
+.delete-btn {
+  border: 0px;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: rgb(240, 166, 166);
+  cursor: pointer;
+}

@@ -6,13 +6,14 @@ import "./Shop.css";
 
 export default function Shop() {
   const [products, setProducts] = useState([]);
+  
   const [cart,setCart] = useState([])
   useEffect(() => {
     fetch("products.json")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
-
+ 
   useEffect(()=>{
     const storedCart = getStoreCart();
     console.log(storedCart);
@@ -63,7 +64,10 @@ export default function Shop() {
       </div>
       <div className="cart_container">
         <div className="cart_content">
-          <Cart cart={cart}></Cart>
+          <Cart cart={cart}>
+            <button className="clear-btn">Clear Cart</button>
+            <button className="review-btn">Review Order</button>
+          </Cart>
         </div>
       </div>
     </div>
